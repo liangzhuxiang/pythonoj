@@ -1,0 +1,45 @@
+# A+B Problem
+a, b = map(int, input().split())
+print(a + b)
+
+# 打印小写字母表
+print('abcdefghijklm')
+print('nopqrstuvwxyz')
+print('zyxwvutsrqpon')
+print('mlkjihgfedcba')
+
+# 混合运算
+a, b = map(int, input().split())
+print((a + b) * (a - b))
+
+# 求长方形面积和周长
+a, b = map(int, input().split())
+print(a * b, 2 * (a + b))
+
+# 求三角形周长
+x1, y1, x2, y2, x3, y3 = map(int, input().split())
+ans = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 + ((x3 - x2) ** 2 + (y3 - y2) ** 2) ** 0.5 + ((x1 - x3) ** 2 + (y1 - y3) ** 2) ** 0.5
+print('{:.2f}'.format(ans))
+
+# 拼接
+print(4 * (int(input()) - 1))
+
+# 魔方
+n = int(input())
+print(8)
+print(12 * (n - 2))
+print(6 * (n - 2) * (n - 2))
+
+# 求任意三位数各个数位上数字的和
+x = int(input())
+print(x // 100 + (x // 10) % 10 + x % 10)
+
+# 求任意三位数打乱次序后的最大值
+n = int(input())
+a = n // 100
+b = (n // 10) % 10
+c = n % 10
+d = max(a, b, c)
+f = min(a, b, c)
+e = a + b + c - d - f
+print(d * 100 + e * 10 + f)
