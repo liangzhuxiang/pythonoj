@@ -74,7 +74,9 @@ for i in range(n):
 print((s - 1) % n + 1)
 
 # 自由落体
-# 未通过
+M, N = map(int, input().split())
+h = M * (0.5 ** N)
+print('%.2f %.2f'%(h, 3 * M - h * 4))
 
 # 咪咪的智慧
 n, t = map(int, input().split())
